@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<table>
+    <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Number Of Logins</th>
+  </tr>
+    <tr>
+    <td width="300px" style="border: 0px">
+        {% for one_user in all_users %}
+            {{ one_user.first_name }} <br />
+        {% endfor %}
+    </td>
+        <td>
+           {% for one_user in all_users %}
+            {{ one_user.last_name }} <br />
+            {% endfor %}
+        </td>
+
+        <td>
+            {% for one_user in all_users %}
+                {{ one_user.number_of_login }} <br />
+            {% endfor %}
+        </td>
+    </tr>
+</table>
+
+<br />
+<br />
+
+</body>
+</html>
